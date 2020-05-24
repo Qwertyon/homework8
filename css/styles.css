@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: white;
+  display: block;
+}
+
+.header {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 70px;
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1915;
+  background-image: url("../images/mobile/people-mobile.png");
+}
+
+.enter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 115px;
+}
+
+.btn {
+  width: 90px;
+  height: 36px;
+  display: inline-block;
+  border: none;
+  border-radius: 18px;
+  border: none;
+  background-color: rgba(26, 25, 21, 0);
+  font-size: 1rem;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn:hover {
+  border: 2px solid #ffffff;
+}
+
+.logo {
+  font-size: 1.42rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.finder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 35px;
+  margin-bottom: 15px;
+}
+
+.enter,
+.logo,
+.finder {
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+
+.header-subtitle {
+  font-size: 2.142rem;
+  margin-bottom: 14px;
+}
+
+.header-annotation {
+  font-size: 1.28rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.find-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  align-self: center;
+  height: 40px;
+  line-height: 40px;
+  width: 280px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #ff4e50;
+}
+
+.partner-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-subtitle {
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 1.57rem;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.partner-item {
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.photo-wrapper {
+  height: 120px;
+  width: 120px;
+  margin: 0px auto;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.photo-wrapper::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-position: center;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.tv::before {
+  background-image: url("../images/icons/tv.png");
+  background-color: #ff4e50;
+}
+
+.alchemy::before {
+  background-image: url("../images/icons/alchemy.png");
+  background-color: #ffa507;
+}
+
+.cup::before {
+  background-image: url("../images/icons/cup.png");
+  background-color: #1cd7ad;
+}
+
+.telegram::before {
+  background-image: url("../images/icons/telegram.png");
+  background-color: #4e73db;
+}
+
+.partner-name {
+  font-size: 1rem;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.partner-description {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 1rem;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.btn-for-other {
+  margin: 0px auto 55px auto;
+  font-size: 1rem;
+  color: #ff4e50;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url("../images/teblet/people-tablet.png");
+    height: 700px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-start;
+  }
+
+  .enter {
+    order: 2;
+    padding: 40px 50px 150px 0px;
+    margin: 0px;
+  }
+  .logo {
+    order: 1;
+    padding: 40px 0px 150px 50px;
+  }
+
+  .finder {
+    order: 3;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header-subtitle {
+    margin-bottom: 40px;
+    font-size: 3.714rem;
+    max-width: 510px;
+    align-self: center;
+  }
+  .header-annotation {
+    margin-bottom: 35px;
+    font-size: 1.714rem;
+  }
+  .find-btn {
+    width: 225px;
+  }
+
+  .partner-subtitle {
+    margin-bottom: 30px;
+  }
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 492px;
+    align-self: center;
+  }
+
+  .partner-item {
+    width: 236px;
+  }
+  .partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 55px;
+  }
+  .partner-item:nth-last-child(-n + 2) {
+    margin-bottom: 35px;
+  }
+
+  .partner-description {
+    padding: 0px 10px;
+  }
+
+  .btn-for-other {
+    width: 192px;
+    margin: 0px auto 40px auto;
+  }
+}
+
+@media (min-width: 940px) {
+  .header {
+    background-image: url("../images/laptop/people-laptop.png");
+    justify-content: center;
+  }
+  .enter {
+    padding: 40px 0px 150px 0px;
+    margin: 0px;
+  }
+
+  .logo {
+    padding: 40px 0px 150px 0px;
+    margin-right: 575px;
+  }
+  .partner-list {
+    width: 100%;
+    max-width: 940px;
+  }
+  .partner-item {
+    width: 220px;
+    margin-bottom: 40px !important;
+  }
+  .partner-description {
+    padding: 0px;
+  }
+}
