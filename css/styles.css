@@ -237,6 +237,12 @@ button {
   border-radius: 20px;
   background-color: #ffffff;
   border: 2px solid #ff4e50;
+  cursor: pointer;
+}
+
+.btn-for-other:hover {
+  color: #ffffff;
+  background-color: #ff4e50;
 }
 
 @media (min-width: 768px) {
